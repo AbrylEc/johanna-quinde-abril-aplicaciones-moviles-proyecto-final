@@ -1,0 +1,46 @@
+<!––Solicitar el ingreso de alguna de estas palabras (casa, mesa, 
+perro, gato), luego mostrar la palabra traducida en inglés. 
+Es decir, si se ingresa 'casa' debemos mostrar el texto 
+'house' en la página.--!>
+
+</DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Ingreso de Palabras</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+
+        let palabra;
+        palabra = prompt('Ingresar la palabra casa, mesa, perro o gato para realizar su traducción al inglés: ');
+        document.write('* * APRENDAMOS * *' + '<br>');
+
+        switch (palabra) 
+        {
+            case 'casa':
+                document.write('La palabra \n' + palabra + ' en inglés es HOUSE.');
+                break;
+            case 'mesa':
+                document.write('La palabra \n' + palabra + ' en inglés es TABLE.');
+                break;
+            case 'perro':
+                document.write('La palabra \n' + palabra + ' en inglés es DOG.');
+                break;
+            case 'gato':
+                document.write('La palabra \n' + palabra + ' en inglés es CAT.');
+                break;
+            default:
+                document.write('La palabra ingresada es inválida. Intente nuevamente.');
+                break;
+        }
+
+    </script>
+
+</body>
+
+</html>

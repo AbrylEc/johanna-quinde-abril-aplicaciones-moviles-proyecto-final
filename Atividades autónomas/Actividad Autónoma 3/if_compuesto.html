@@ -1,0 +1,56 @@
+</DOCTYPE html>
+
+<html>
+
+<head>
+	<title>CondicionalCompuesta</title>
+	<meta charset = "UTF-8">
+</head>
+
+<body>
+
+	<script>	
+	
+	    //Declaración de las variables a utilizar
+		let nota1, nota2, nota3, estudiante;
+
+		estudiante=prompt('Ingrese el nombre del estudiante: ');
+		nota1=prompt('Ingrese la nota 1: ');
+		nota2=prompt('Ingrese la nota 2: ');
+		nota3=prompt('Ingrese la nota 3: ');
+		
+		//Proceso de conversión del tipò de datos
+		let promedio = (parseFloat(nota1) + parseFloat(nota2) + parseFloat(nota3))/3;
+
+
+		if (nota1>10 || nota2>10 || nota3>10)
+		{
+			document.write('Las calificaciones ingresadas no son válidas. El rango establecido es del 0 al 10. Intente nuevamente.');
+
+		}
+		else if(promedio<0)
+		{
+			document.write('Las calificaciones no pueden contener números negativos. Intente nuevamente.');
+		}
+		else if (promedio>=7)
+		{
+			document.write('El estudiante aprobó la asignatura con promedio de ' + promedio);
+		}
+		else if(promedio>=4)
+		{
+			document.write('El estudiante deberá rendir supletorio de la asignatura con promedio de ' + promedio );
+		}
+		else 
+		{
+			document.write('El estudiante perdió la asignatura con promedio de ' + promedio);
+		}
+		
+	</script>
+
+	<div></div>
+	<div></div>
+	<div></div>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+</DOCTYPE html>
+
+<html>
+
+<head>
+	<title>CondicionalSimple</title>
+	<meta charset = "UTF-8">
+</head>
+
+<body>
+
+	<script>	
+		let nota1, nota2, nota3, estudiante;
+
+		estudiante=prompt('Ingrese el nombre del estudiante: ');
+		nota1=prompt('Ingrese la nota 1: ');
+		nota2=prompt('Ingrese la nota 2: ');
+		nota3=prompt('Ingrese la nota 3: ');
+		
+		let sumaTotal = parseInt(nota1) + parseInt(nota2) + parseInt(nota3);
+
+		if (sumaTotal>=24)
+		{
+			document.write('El estudiante aprobó la asignatura con: ' + sumaTotal);
+		}
+		else
+		{
+			document.write('El estudiante reprobó la asignatura con: ' + sumaTotal + 'puntos.');
+		}
+	</script>
+
+	<div></div>
+	<div></div>
+	<div></div>
+
+</body>
+
+</html>

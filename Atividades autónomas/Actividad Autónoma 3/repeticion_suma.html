@@ -1,0 +1,34 @@
+<!––Desarrollar un programa que nos solicite el ingreso de 5 números por teclado y realizar la suma de dichos valores--!>
+
+</DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Sentencia While</title>
+	<meta charset = "UTF-8">
+</head>
+
+<body>
+
+	<script>	
+		let vInicial=1, suma=0, valor;
+
+		while(vInicial<=5)
+		{
+			valor=parseInt(prompt('Ingrese el valor' + vInicial +" "));
+			suma=suma+valor;
+			vInicial++;
+		}
+
+		document.write('La suma de los valores ingresados es: ' + suma);
+	</script>
+
+	<div></div>
+	<div></div>
+	<div></div>
+
+</body>
+
+</html>
+

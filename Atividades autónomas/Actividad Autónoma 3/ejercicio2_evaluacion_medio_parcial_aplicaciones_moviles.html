@@ -1,0 +1,39 @@
+<!––Realizar un programa donde se ingrese un número y se 
+tome en cuenta como serie e imprima 25 términos por 
+ejemplo:
+Si ingreso el valor 11 la serie seria 11, 22, 33, 44, 55, 66, 
+77, 88, 99, 110, 121
+Si ingreso el valor de 10 la serie seria 10, 20, 30, 40, 50…
+hasta que imprima una secuencia de 25 términos.--!>
+
+</DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Impresion 25</title>
+	<meta charset = "UTF-8">
+</head>
+
+<body>
+
+	<script>	
+
+		let elemento = parseInt(prompt('Ingrese un número: '));
+		let total = 0;
+		let lista = 1;
+		document.write('* * LISTA DE NÚMEROS * *' + '<br>');
+
+		while (lista <= 25) 
+		{
+
+			lista++;
+			total = total + elemento;
+			document.write(total + '<br>');
+		}
+		
+	</script>
+
+</body>
+
+</html>

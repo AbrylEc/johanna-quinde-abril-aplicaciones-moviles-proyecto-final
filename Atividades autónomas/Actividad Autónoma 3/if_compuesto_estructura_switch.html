@@ -1,0 +1,52 @@
+</DOCTYPE html>
+
+<html>
+
+<head>
+	<title>CondicionalCompuesta</title>
+	<meta charset = "UTF-8">
+</head>
+
+<body>
+
+	<script>	
+
+		/*Confeccionar una página que solicite que ingrese un valor comprendido entre 1 y 5. 
+		Luego mostrar el valor ingresado en letras. Adicional mostrar un mensaje de error en 
+		caso de no existir más opciones o no se encuentre establecido en este rango.*/
+	
+
+		let valor = parseInt(prompt('Ingrese un valor entre 1 y 5: '));
+
+		switch (valor)
+		{
+			case 1:
+                    document.write('El valor en número es ' + valor + ' y en letras es: UNO');
+                    break;
+            case 2:
+                    document.write('El valor en número es ' + valor + ' y en letras es: DOS');
+                    break;
+            case 3:
+                    document.write('El valor en número es ' + valor + ' y en letras es: TRES');
+                    break;
+            case 4:
+                    document.write('El valor en número es ' + valor + ' y en letras es: CUATRO');
+                    break;
+            case 5:
+                    document.write('El valor en número es ' + valor + ' y en letras es: CINCO');
+                    break;
+
+            default: 
+            	document.write ('Error. Debe ingresar un número del 1 al 5.');
+		}
+
+
+	</script>
+
+	<div></div>
+	<div></div>
+	<div></div>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+</DOCTYPE html>
+
+<html>
+
+<head>
+	<title>CondicionalCompuesta</title>
+	<meta charset = "UTF-8">
+</head>
+
+<body>
+
+	<script>	
+
+		/*Confeccionar una página que solicite que ingrese un valor comprendido entre 1 y 5. 
+		Luego mostrar el valor ingresado en letras. Adicional mostrar un mensaje de error en 
+		caso de no existir más opciones o no se encuentre establecido en este rango.*/
+	
+		let color = prompt('Ingrese el nombre de un color para ver su ejemplo: ');
+
+		switch (color)
+		{
+			case 'ROJO':
+                    document.write('El color ingresado es ' + color + ' como la sangre.');
+                    break;
+            case 'VERDE':
+                    document.write('El color ingresado es ' + color + ' como el pasto.');
+                    break;
+            case 'AMARILLO':
+                     document.write('El color ingresado es ' + color + ' como el sol.');
+                    break;
+            case 'LILA':
+                     document.write('El color ingresado es ' + color + ' como la pintura.');
+                    break;
+            case 'CAFÉ':
+                     document.write('El color ingresado es ' + color + ' como el café.');
+                    break;
+            default: 
+            	document.write ('El color ingresado no tiene ejemplo.');
+		}
+
+	</script>
+
+	<div></div>
+	<div></div>
+	<div></div>
+
+</body>
+
+</html>

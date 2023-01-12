@@ -1,0 +1,60 @@
+<!––Solicitar la carga de un número entre el rango del 0 al 150 y se muestre por mensaje
+de cuántos dígitos es el número ingresado. Finalizar el programa cuando se cargue el valor 
+cero.--!>
+
+</DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Estructura doWhile</title>
+	<meta charset = "UTF-8">
+</head>
+
+<body>
+
+	<script>	
+		
+		let numero;
+
+		do{
+
+			numero = parseInt(prompt('Ingrese un valor de 0 a 150: '));
+
+			if(numero > 0 && numero <= 150)
+			{
+
+				if(numero<10)
+				{
+					document.write('El número ' + numero + ' tiene un dígito.');
+				}
+				else if(numero<100)
+				{
+
+					document.write('El número ' + numero + ' tiene dos dígitos.');
+				}
+				else
+				{
+
+					document.write('El número ' + numero + ' tiene tres dígitos.');
+				}
+			}
+			else
+			{
+				document.write('El número debe encontrarse en el rango de 0 a 150 y usted ingresó el número ' + numero + '.');
+			}
+			document.write('<br>');
+
+		} 
+		while(numero!=0);
+				
+	</script>
+
+	<div></div>
+	<div></div>
+	<div></div>
+
+</body>
+
+</html>
+
